@@ -1,0 +1,106 @@
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
+    text-align: center;
+    margin: 20px 0;
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+  }
+  
+  /* Layout styles */
+  main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 20px;
+  }
+  
+  .section {
+    border: 3px solid black;
+    padding: 20px;
+    margin: 10px 0;
+    background-color: #f4f4f4;
+    position: relative;
+    padding-top: 60px; /* Adjust padding to make space for the title */
+  }
+  
+  .section-title {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    padding: 5px 10px;
+    font-weight: bold;
+    font-size: 0.8em;
+    border: 3px solid rgb(9, 1, 1);
+    border-top-width: 0px; /* Make all sides thicker */
+  border-bottom-width: 3px; /* Make all sides thicker */
+  border-left-width: 3px; /* Make all sides thicker */
+  border-right-width: 0px; 
+}
+
+.section-title-chicken {
+    background-color: pink;
+    color: black;
+}
+
+.section-title-beef {
+    background-color: red;
+    color: white; /* Text color for beef title */
+}
+
+.section-title-sushi {
+    background-color: yellow;
+    color: black; /* Text color for sushi title */
+}
+  
+  /* Desktop view */
+  @media (min-width: 992px) {
+    .section {
+      width: 32%;
+    }
+  }
+  
+  /* Tablet view */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .section {
+      width: 48%;
+    }
+  
+    #section3 {
+      width: 100%; /* Full width for section 3 on tablet */
+    }
+  }
+  
+  /* Mobile view */
+  @media (max-width: 767px) {
+    .section {
+      width: 100%;
+    }
+  }
+  
+  /* Optional styles for better readability */
+  body {
+    font-family: 'Arial', sans-serif;
+  }
+  
+  h1 {
+    font-size: 1.75em; /* 75% larger than the base font size */
+  }
+  
+  .section-title {
+    font-size: 1.25em; /* 25% larger than the base font size */
+  }
+  
